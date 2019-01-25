@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=oaccdb;user=;password=; #Your username and password here
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    oacc:
+      rootpassword: oaccpwd
