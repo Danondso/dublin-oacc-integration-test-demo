@@ -1,18 +1,16 @@
 package com.dublin.oacc.demo;
 
-import com.acciente.oacc.*;
+import com.acciente.oacc.AccessControlContext;
+import com.acciente.oacc.PasswordCredentials;
+import com.acciente.oacc.Resources;
 import com.acciente.oacc.encryptor.bcrypt.BCryptPasswordEncryptor;
 import com.acciente.oacc.sql.SQLAccessControlContextFactory;
-import com.acciente.oacc.sql.SQLAccessControlSystemInitializer;
 import com.acciente.oacc.sql.SQLProfile;
-import com.acciente.oacc.sql.internal.persister.SQLConnection;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
-import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
